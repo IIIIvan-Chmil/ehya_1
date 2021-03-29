@@ -1,0 +1,150 @@
+.header
+  &__background-1
+    height: 742px
+    position: relative
+    background: #1565d8
+    background-image: url(../img/fon-header.jpg)
+    background-blend-mode: normal
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: cover
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: rgba(24, 59, 86, 0.65)
+  &__background-2
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 22px
+    background-image: url(../img/wave.png)
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: contain
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 23px
+  &__logo
+    max-width: 90px
+    margin-top: 5px
+  &__menu
+    list-style-type: none
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: end
+  &__fragment
+    width: 594px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    margin-right: 26px
+    a
+      color: #ffffff
+      text-decoration: none
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+  &__button
+    color: #ffffff
+    text-decoration: none
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    border: 2px solid #ffffff
+    border-radius: 8px
+    background-color: transparent
+    padding: 12px 24px
+  &__block
+    position: relative
+    z-index: 200
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 110px
+    max-width: 760px
+    margin-left: auto
+    margin-right: auto
+    &-title
+      color: #ffffff
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      margin-bottom: 41px
+    &-form
+      width: 760px
+      height: 56px
+      border-radius: 8px
+      overflow: hidden
+      position: relative
+    &-input
+      width: 100%
+      height: 100%
+      position: absolute
+      padding-left: 52px
+      padding-right: 115px
+    ::placeholder
+      background: url(../img/search.svg) no-repeat scroll 20px 20px
+      padding-top: 10px
+      padding-left: 50px
+      color: #959ead
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+    &-button
+      position: absolute
+      min-width: 93px
+      right: 9px
+      top: 9px
+      bottom: 9px
+      padding: 1px
+      color: #ffffff
+      background-color: #1565d8
+      border: none
+      border-radius: 8px
+      overflow: hidden
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+    &-tags
+      align-self: flex-start
+      margin-top: 24px
+      margin-right: 10px
+    &-list
+      color: #ffffff
+      font-family: Open Sans
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-right: 10px
+    &-tag
+      color: #ffffff
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-right: 20px
+      border: 1px solid #FFFFFF
+      border-radius: 4px
+      background-color: transparent
+      padding: 5px 17px
