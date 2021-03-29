@@ -362,6 +362,10 @@ textarea {
   resize: none;
 }
 
+.header {
+  padding-bottom: 20px;
+}
+
 .header__background-1 {
   height: 742px;
   position: relative;
@@ -547,5 +551,30 @@ textarea {
   border-radius: 4px;
   background-color: transparent;
   padding: 5px 17px;
+}
+
+.header__featured {
+  margin-top: 95px;
+  border: 1px solid #E5EAF4;
+  border-radius: 16px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header__featured-img {
+  display: block;
+  width: 570px;
+  min-height: 381px;
+  overflow: hidden;
+}
+
+.header__featured-foto {
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__featured-card {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
