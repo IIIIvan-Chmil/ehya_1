@@ -29,6 +29,21 @@
         position: relative
         width: 465px
         height: 500px
+  .update
+    &__first,
+    &__second,
+    &__third
+      &-card
+        width: 300px
+        height: 450px
+        &-title
+          font-size: 26px
+          line-height: 32px
+          margin-bottom: -6px
+        &-paragraph
+          font-size: 16px
+          line-height: 22px
+          margin-bottom: 21px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -76,6 +91,26 @@
           margin-bottom: 60px
           &--mod
             margin-bottom: 40px
+  .update
+    &__flag
+      flex-direction: column
+      align-items: start
+      padding-top: 50px
+    &__first,
+    &__second,
+    &__third
+      &-card
+        padding: 25px 5px
+        width: 225px
+        height: 400px
+        &-title
+          font-size: 22px
+          line-height: 28px
+          margin-bottom: -6px
+        &-paragraph
+          font-size: 14px
+          line-height: 20px
+          margin-bottom: 21px
 @media (max-width: 767px)
   .container
     width: 90%
@@ -146,7 +181,27 @@
         margin-bottom: 20px
         &-title
           width: 54%
-
+  .update
+    &__cards
+      flex-wrap: wrap
+      flex-direction: column
+    &__first,
+    &__second,
+    &__third
+      &-card
+        padding: 35px 35px
+        width: 100%
+        height: 350px
+        margin-bottom: 20px
+        &-title
+          font-size: 26px
+          line-height: 32px
+          margin-bottom: -6px
+        &-paragraph
+          width: 50%
+          font-size: 18px
+          line-height: 24px
+          margin-bottom: 21px
 @media (max-width: 576px)
   .container
     width: 90%
@@ -258,3 +313,71 @@
       padding: 2px 11px
       top: 20px
       left: 17px
+  .update
+    padding-top: 48px
+    padding-bottom: 20px
+    &__cards
+      margin-bottom: 16px
+    &__title
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+      margin-bottom: -62px
+    &__flag
+      margin-bottom: -8px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+      max-width: 100%
+    &__button
+      display: none
+      &-img
+        margin-left: 7px
+      &-mod
+        display: block
+        width: 173px
+        padding: 6px 19px 7px 13px
+        margin: auto
+    &__first,
+    &__second,
+    &__third
+      &-card
+        height: 320px
+        padding: 16px 20px
+        margin-bottom: 16px
+        &-title
+          font-size: 20px
+          line-height: 24px
+          margin-bottom: -2px
+          width: 100%
+          &-mod
+            margin-bottom: -6px
+        &-paragraph
+          font-size: 14px
+          line-height: 21px
+          margin-bottom: 21px
+          width: 100%
+          &-mod
+            margin-bottom: 4px
+        &-img
+          margin-right: 6px
+        &-name
+          font-size: 14px
+          line-height: 20px
+          margin-left: 4px
+        &-rating
+          font-size: 12px
+          line-height: 16px
+          margin-left: 5px
+        &-data
+          font-size: 14px
+          line-height: 20px
+    &__button
+      display: none
+      &-mod
+        display: block
+        width: 173px
+        padding: 6px 19px 7px 13px
+        margin: auto
+        margin-top: 30px
