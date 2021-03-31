@@ -709,6 +709,23 @@ textarea {
   border: 2px solid #1565D8;
 }
 
+.popular__button-mod {
+  display: none;
+  width: 183px;
+  margin-bottom: 17px;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1565D8;
+  text-align: center;
+  padding: 12px 14px 12px 19px;
+  border-radius: 8px;
+  border: 2px solid #1565D8;
+}
+
 .popular__button-img {
   margin-left: 11px;
 }
@@ -717,6 +734,10 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+
+.popular__cards a {
+  text-decoration: none;
 }
 
 .popular__first-img, .popular__second-img {
@@ -824,18 +845,19 @@ textarea {
 .popular__label {
   display: block;
   position: absolute;
-  max-width: 126px;
+  max-width: 153px;
+  text-transform: uppercase;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  background-color: #36b37e1a;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #ffffff;
   border: none;
   border-radius: 2000px;
   color: #36B37E;
   padding: 6px 15px;
-  top: 33px;
+  top: 30px;
   left: 30px;
 }
 
@@ -869,11 +891,19 @@ textarea {
     top: 15px;
     left: 30px;
   }
+  .popular__first-card, .popular__second-card {
+    position: relative;
+    width: 465px;
+    height: 500px;
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+  }
+  .header {
+    padding-bottom: 120px;
   }
   .header__fragment {
     justify-content: flex-end;
@@ -898,11 +928,39 @@ textarea {
     font-size: 16px;
     line-height: 25px;
   }
+  .popular__flag {
+    flex-direction: column;
+    align-items: start;
+    margin-top: -2px;
+    margin-bottom: 10px;
+  }
+  .popular__first-card, .popular__second-card {
+    position: relative;
+    width: 335px;
+    height: 440px;
+    padding: 19px 24px;
+  }
+  .popular__first-card-title, .popular__second-card-title {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    margin-bottom: 60px;
+  }
+  .popular__first-card-title--mod, .popular__second-card-title--mod {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     width: 90%;
+  }
+  .header {
+    padding-bottom: 280px;
   }
   .header__fragment {
     display: none;
@@ -970,11 +1028,28 @@ textarea {
   .header__featured-card-bottom {
     margin-top: 30px;
   }
+  .popular__cards {
+    flex-wrap: wrap;
+  }
+  .popular__cards a {
+    width: 100%;
+  }
+  .popular__first-card, .popular__second-card {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .popular__first-card-title, .popular__second-card-title {
+    width: 54%;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
-    width: 87%;
+    width: 90%;
+  }
+  .header {
+    padding-bottom: 352px;
   }
   .header__background {
     height: 518px;
@@ -1040,6 +1115,79 @@ textarea {
     top: 18px;
     left: 12px;
     text-transform: uppercase;
+  }
+  .popular {
+    padding-top: 65px;
+    padding-bottom: 20px;
+  }
+  .popular__cards {
+    margin-bottom: 16px;
+  }
+  .popular__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin: 1px;
+  }
+  .popular__flag {
+    margin-bottom: 22px;
+  }
+  .popular__text {
+    font-size: 11px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 100%;
+  }
+  .popular__button {
+    display: none;
+  }
+  .popular__button-img {
+    margin-left: 7px;
+  }
+  .popular__button-mod {
+    display: block;
+    width: 173px;
+    padding: 6px 19px 7px 13px;
+    margin: auto;
+  }
+  .popular__first-card, .popular__second-card {
+    height: 320px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+  }
+  .popular__first-card-title, .popular__second-card-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    width: 100%;
+  }
+  .popular__first-card-title--mod, .popular__second-card-title--mod {
+    margin-bottom: 6px;
+  }
+  .popular__first-card-img, .popular__second-card-img {
+    margin-right: 6px;
+  }
+  .popular__first-card-name, .popular__second-card-name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px;
+  }
+  .popular__first-card-rating, .popular__second-card-rating {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 5px;
+  }
+  .popular__first-card-data, .popular__second-card-data {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .popular__label {
+    max-width: 132px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 11px;
+    top: 20px;
+    left: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */

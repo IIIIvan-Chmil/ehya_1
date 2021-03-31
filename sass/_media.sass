@@ -23,10 +23,17 @@
     &__label
       top: 15px
       left: 30px
+  .popular
+    &__first, &__second
+      &-card
+        position: relative
+        width: 465px
+        height: 500px
 @media (max-width: 992px)
   .container
     max-width: 700px
   .header
+    padding-bottom: 120px
     &__fragment
       justify-content: flex-end
     &__block
@@ -46,10 +53,34 @@
         &-paragraph
           font-size: 16px
           line-height: 25px
+  .popular
+    &__flag
+      flex-direction: column
+      align-items: start
+      margin-top: -2px
+      margin-bottom: 10px
+    &__first, &__second
+      &-card
+        position: relative
+        width: 335px
+        height: 440px
+        padding: 19px 24px
+        &-title
+          color: #FFFFFF
+          font-family: Roboto
+          font-style: normal
+          font-weight: bold
+          font-size: 30px
+          line-height: 40px
+          letter-spacing: 0.2px
+          margin-bottom: 60px
+          &--mod
+            margin-bottom: 40px
 @media (max-width: 767px)
   .container
     width: 90%
   .header
+    padding-bottom: 280px
     &__fragment
       display: none
     &__menu
@@ -103,10 +134,24 @@
           line-height: 20px
         &-bottom
           margin-top: 30px
+  .popular
+    &__cards
+      flex-wrap: wrap
+      a
+        width: 100%
+    &__first, &__second
+      &-card
+        width: 100%
+        height: 350px
+        margin-bottom: 20px
+        &-title
+          width: 54%
+
 @media (max-width: 576px)
   .container
-    width: 87%
+    width: 90%
   .header
+    padding-bottom: 352px
     &__background
       height: 518px
     &__nav
@@ -155,3 +200,61 @@
       top: 18px
       left: 12px
       text-transform: uppercase
+  .popular
+    padding-top: 65px
+    padding-bottom: 20px
+    &__cards
+      margin-bottom: 16px
+    &__title
+      font-size: 24px
+      line-height: 32px
+      text-align: center
+      margin: 1px
+    &__flag
+      margin-bottom: 22px
+    &__text
+      font-size: 11px
+      line-height: 24px
+      text-align: center
+      max-width: 100%
+    &__button
+      display: none
+      &-img
+        margin-left: 7px
+      &-mod
+        display: block
+        width: 173px
+        padding: 6px 19px 7px 13px
+        margin: auto
+    &__first, &__second
+      &-card
+        height: 320px
+        padding: 16px 18px
+        margin-bottom: 16px
+        &-title
+          font-size: 20px
+          line-height: 24px
+          margin-bottom: 48px
+          width: 100%
+          &--mod
+            margin-bottom: 6px
+        &-img
+          margin-right: 6px
+        &-name
+          font-size: 14px
+          line-height: 20px
+          margin-left: 4px
+        &-rating
+          font-size: 12px
+          line-height: 16px
+          margin-left: 5px
+        &-data
+          font-size: 14px
+          line-height: 20px
+    &__label
+      max-width: 132px
+      font-size: 14px
+      line-height: 20px
+      padding: 2px 11px
+      top: 20px
+      left: 17px
