@@ -346,12 +346,6 @@ template {
   margin: auto;
 }
 
-.container-new {
-  max-width: 1194px;
-  margin: auto;
-  position: relative;
-}
-
 img {
   max-width: 100%;
 }
@@ -1084,16 +1078,18 @@ textarea {
   left: 30px;
 }
 
-.slider {
-  width: 1194px;
-}
-
 .swiper-container {
   width: 1140px;
   height: 383px;
   border-radius: 16px;
   position: relative;
   z-index: 100;
+}
+
+.container-new {
+  max-width: 1194px;
+  margin: auto;
+  position: relative;
 }
 
 .examples {
@@ -1329,7 +1325,7 @@ textarea {
 @media (min-width: 992px) {
   a:hover {
     color: #36B37E;
-    opacity: 0.9;
+    opacity: 0.95;
     transition: 0.2s;
   }
   button:hover {
@@ -1345,17 +1341,29 @@ textarea {
   .container {
     max-width: 960px;
   }
-  .header__featured-card-title {
+  .container-new {
+    max-width: 1014px;
+  }
+  .swiper-container {
+    width: 960px;
+  }
+  .header__block-form {
+    width: 750px;
+  }
+  .header__featured-card-title,
+  .examples__featured-card-title {
     font-size: 28px;
     line-height: 35px;
     margin-top: 50px;
     margin-bottom: 16px;
   }
-  .header__featured-card-paragraph {
+  .header__featured-card-paragraph,
+  .examples__featured-card-paragraph {
     font-size: 16px;
     line-height: 28px;
   }
-  .header__label {
+  .header__label,
+  .examples__label {
     top: 15px;
     left: 30px;
   }
@@ -1380,33 +1388,39 @@ textarea {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1020px) {
   .container {
     max-width: 700px;
   }
+  .container-new {
+    max-width: 754px;
+  }
+  .swiper-container {
+    max-width: 700px;
+  }
   .header {
-    padding-bottom: 120px;
+    padding-bottom: 170px;
   }
   .header__fragment {
     justify-content: flex-end;
   }
-  .header__block {
+  __block {
     max-width: 600px;
     margin-top: 46px;
   }
-  .header__block-form {
+  __block-title-form {
     width: 600px;
   }
-  .header__featured-card {
+  __block__featured-card {
     padding: 10px 46px 22px 32px;
   }
-  .header__featured-card-title {
+  __block__featured-card-title {
     font-size: 26px;
     line-height: 31px;
     margin-top: 45px;
     margin-bottom: 7px;
   }
-  .header__featured-card-paragraph {
+  __block__featured-card-paragraph {
     font-size: 16px;
     line-height: 25px;
   }
@@ -1461,8 +1475,15 @@ textarea {
   .container {
     width: 90%;
   }
+  .container-new {
+    width: 96%;
+  }
+  .swiper-container {
+    width: 93%;
+    height: 100%;
+  }
   .header {
-    padding-bottom: 280px;
+    padding-bottom: 350px;
   }
   .header__fragment {
     display: none;
@@ -1493,29 +1514,36 @@ textarea {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
-  .header__featured {
+  .header__featured,
+  .examples__featured {
     grid-template-columns: 100%;
   }
-  .header__featured-img {
+  .header__featured-img,
+  .examples__featured-img {
     height: 300px;
     width: 100%;
   }
-  .header__featured-card {
+  .header__featured-card,
+  .examples__featured-card {
     padding: 10px 46px 32px 32px;
   }
-  .header__featured-card-title {
+  .header__featured-card-title,
+  .examples__featured-card-title {
     font-size: 20px;
     line-height: 24px;
   }
-  .header__featured-card-paragraph {
+  .header__featured-card-paragraph,
+  .examples__featured-card-paragraph {
     font-size: 14px;
     line-height: 24px;
   }
-  .header__featured-card-name {
+  .header__featured-card-name,
+  .examples__featured-card-name {
     font-size: 14px;
     line-height: 20px;
   }
-  .header__featured-card-rating {
+  .header__featured-card-rating,
+  .examples__featured-card-rating {
     color: #5A7184;
     font-family: Open Sans;
     font-style: italic;
@@ -1523,11 +1551,13 @@ textarea {
     font-size: 12px;
     line-height: 16px;
   }
-  .header__featured-card-data {
+  .header__featured-card-data,
+  .examples__featured-card-data {
     font-size: 14px;
     line-height: 20px;
   }
-  .header__featured-card-bottom {
+  .header__featured-card-bottom,
+  .examples__featured-card-bottom {
     margin-top: 30px;
   }
   .popular__cards {
@@ -1581,7 +1611,12 @@ textarea {
     padding-top: 13px;
   }
   .header__logo {
-    max-width: 80px;
+    max-width: 79px;
+    margin-left: 7px;
+  }
+  .header__menu-button {
+    margin-top: 6px;
+    margin-right: 8px;
   }
   .header__block {
     margin-top: 36px;
@@ -1593,6 +1628,7 @@ textarea {
   }
   .header__block-form {
     height: 100%;
+    width: 95%;
   }
   .header__block-input {
     position: static;
@@ -1601,6 +1637,9 @@ textarea {
     margin-bottom: 12px;
     padding-right: 20px;
   }
+  .header__block ::placeholder {
+    padding-left: 25px;
+  }
   .header__block-button {
     position: static;
     width: 100%;
@@ -1608,7 +1647,8 @@ textarea {
     border-radius: 8px;
   }
   .header__block-tags {
-    margin-top: 15px;
+    margin-top: 16px;
+    margin-left: 8px;
   }
   .header__block-list {
     font-size: 14px;
@@ -1618,9 +1658,10 @@ textarea {
   }
   .header__block-tag {
     margin-bottom: 11px;
+    margin-right: 12px;
   }
   .header__featured {
-    margin-top: 25px;
+    margin-top: 23px;
   }
   .header__featured-img {
     height: 160px;
@@ -1630,13 +1671,14 @@ textarea {
   }
   .header__featured-card-title {
     margin-bottom: 0;
+    margin-top: 46px;
   }
   .header__featured-card-bottom {
     margin-top: 21px;
   }
   .header__label {
     top: 18px;
-    left: 12px;
+    left: 15px;
     text-transform: uppercase;
   }
   .popular {
@@ -1768,6 +1810,7 @@ textarea {
   }
   .update__first-card-paragraph-mod, .update__second-card-paragraph-mod, .update__third-card-paragraph-mod {
     margin-bottom: 4px;
+    letter-spacing: 0;
   }
   .update__first-card-img, .update__second-card-img, .update__third-card-img {
     margin-right: 6px;
@@ -1795,6 +1838,95 @@ textarea {
     padding: 6px 19px 7px 13px;
     margin: auto;
     margin-top: 30px;
+  }
+  .swiper-container {
+    margin-top: -20px;
+  }
+  .examples {
+    padding-bottom: 40px;
+    padding-top: 15px;
+  }
+  .examples-button-prev {
+    top: 42%;
+    left: -2%;
+    transform: scale(0.7);
+  }
+  .examples-button-next {
+    top: 42%;
+    right: -2%;
+    transform: scale(0.7);
+  }
+  .examples__title {
+    font-size: 24px;
+    margin-left: 7px;
+    margin-bottom: 6px;
+  }
+  .examples__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0;
+  }
+  .examples__button {
+    display: none;
+  }
+  .examples__button-mod {
+    display: block;
+    width: 173px;
+    padding: 6px 19px 7px 13px;
+    margin-left: 70px;
+    margin-top: 14px;
+  }
+  .examples__button-img {
+    margin-left: 6px;
+  }
+  .examples__featured-img {
+    height: 161px;
+  }
+  .examples__featured-card {
+    padding: 10px 16px 32px 16px;
+  }
+  .examples__featured-card-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+  .examples__featured-card-paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+  .examples__featured-card-bottom {
+    margin-top: 24px;
+  }
+  .examples__featured-card-img {
+    margin-right: 8px;
+  }
+  .examples__featured-card-name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px;
+  }
+  .examples__featured-card-rating {
+    margin-left: 1px;
+    margin-top: -2px;
+    letter-spacing: 1.3px;
+  }
+  .examples__featured-card-data {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .examples__label {
+    text-transform: uppercase;
+    max-width: 132px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 11px;
+    top: 23px;
+    left: 22px;
+    letter-spacing: 0.2px;
   }
 }
 /*# sourceMappingURL=style.css.map */

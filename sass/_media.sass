@@ -1,7 +1,7 @@
 @media (min-width: 992px)
   a:hover
     color: #36B37E
-    opacity: 0.9
+    opacity: 0.95
     transition: 0.2s
   button:hover
     color: #36B37E
@@ -11,7 +11,17 @@
     display: none
   .container
     max-width: 960px
+    &-new
+      max-width: 1014px
+  .swiper
+    &-container
+      width: 960px
   .header
+    &__block
+      &-form
+        width: 750px
+  .header,
+  .examples
     &__featured
       &-card
         &-title
@@ -46,17 +56,24 @@
           font-size: 16px
           line-height: 22px
           margin-bottom: 21px
-@media (max-width: 992px)
+@media (max-width: 1020px)
   .container
     max-width: 700px
+    &-new
+      max-width: 754px
+  .swiper
+    &-container
+      max-width: 700px
   .header
-    padding-bottom: 120px
+    padding-bottom: 170px
     &__fragment
       justify-content: flex-end
-    &__block
-      max-width: 600px
-      margin-top: 46px
-      &-title
+  .header,
+  .examples
+  &__block
+    max-width: 600px
+    margin-top: 46px
+    &-title
       &-form
         width: 600px
     &__featured
@@ -116,8 +133,14 @@
 @media (max-width: 767px)
   .container
     width: 90%
+    &-new
+      width: 96%
+  .swiper
+    &-container
+      width: 93%
+      height: 100%
   .header
-    padding-bottom: 280px
+    padding-bottom: 350px
     &__fragment
       display: none
     &__menu
@@ -143,6 +166,8 @@
       &-list
         flex-basis: 100%
         margin-bottom: 20px
+  .header,
+  .examples
     &__featured
       grid-template-columns: 100%
       &-img
@@ -214,7 +239,12 @@
     &__nav
       padding-top: 13px
     &__logo
-      max-width: 80px
+      max-width: 79px
+      margin-left: 7px
+    &__menu
+      &-button
+        margin-top: 6px
+        margin-right: 8px
     &__block
       margin-top: 36px
       &-title
@@ -223,19 +253,23 @@
         margin-bottom: 30px
       &-form
         height: 100%
+        width: 95%
       &-input
         position: static
         height: 48px
         border-radius: 8px
         margin-bottom: 12px
         padding-right: 20px
+      ::placeholder
+        padding-left: 25px
       &-button
         position: static
         width: 100%
         height: 48px
         border-radius: 8px
       &-tags
-        margin-top: 15px
+        margin-top: 16px
+        margin-left: 8px
       &-list
         font-size: 14px
         line-height: 20px
@@ -243,19 +277,21 @@
         margin-bottom: 12px
       &-tag
         margin-bottom: 11px
+        margin-right: 12px
     &__featured
-      margin-top: 25px
+      margin-top: 23px
       &-img
         height: 160px
       &-card
         padding: 10px 16px 32px 17px
         &-title
           margin-bottom: 0
+          margin-top: 46px
         &-bottom
           margin-top: 21px
     &__label
       top: 18px
-      left: 12px
+      left: 15px
       text-transform: uppercase
   .popular
     padding-top: 65px
@@ -362,6 +398,7 @@
           width: 100%
           &-mod
             margin-bottom: 4px
+            letter-spacing: 0
         &-img
           margin-right: 6px
         &-name
@@ -383,3 +420,77 @@
         padding: 6px 19px 7px 13px
         margin: auto
         margin-top: 30px
+  .swiper
+    &-container
+      margin-top: -20px
+  .examples
+    padding-bottom: 40px
+    padding-top: 15px
+    &-button
+      &-prev
+        top: 42%
+        left: -2%
+        transform: scale(0.7)
+      &-next
+        top: 42%
+        right: -2%
+        transform: scale(0.7)
+    &__title
+      font-size: 24px
+      line-height:
+      margin-left: 7px
+      margin-bottom: 6px
+    &__text
+      font-size: 14px
+      line-height: 24px
+      text-align: center
+      margin: 0
+    &__button
+      display: none
+      &-mod
+        display: block
+        width: 173px
+        padding: 6px 19px 7px 13px
+        margin-left: 70px
+        margin-top: 14px
+      &-img
+        margin-left: 6px
+    &__featured
+      &-img
+        height: 161px
+      &-card
+        padding: 10px 16px 32px 16px
+        &-title
+          font-size: 20px
+          line-height: 24px
+          letter-spacing: 0.2px
+          margin-top: 45px
+          margin-bottom: 0
+        &-paragraph
+          font-size: 14px
+          line-height: 24px
+          max-width: 100%
+        &-bottom
+          margin-top: 24px
+        &-img
+          margin-right: 8px
+        &-name
+          font-size: 14px
+          line-height: 20px
+          margin-left: 4px
+        &-rating
+          margin-left: 1px
+          margin-top: -2px
+          letter-spacing: 1.3px
+        &-data
+          font-size: 14px
+          line-height: 20px
+    &__label
+      text-transform: uppercase
+      max-width: 132px
+      font-size: 14px
+      line-height: 20px
+      padding: 2px 11px
+      top: 23px
+      left: 22px
+      letter-spacing: 0.2px
