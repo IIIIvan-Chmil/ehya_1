@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1683,6 +1684,9 @@ textarea {
     width: 465px;
     height: 500px;
   }
+  .popular__first-card-title, .popular__second-card-title {
+    margin-bottom: 37px;
+  }
   .update__first-card, .update__second-card, .update__third-card {
     width: 300px;
     height: 450px;
@@ -1693,6 +1697,28 @@ textarea {
     margin-bottom: -6px;
   }
   .update__first-card-paragraph, .update__second-card-paragraph, .update__third-card-paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 21px;
+  }
+  .every__first-cardd, .every__second-cardd {
+    position: relative;
+    width: 465px;
+    height: 500px;
+  }
+  .every__first-cardd-title, .every__second-cardd-title {
+    margin-bottom: 37px;
+  }
+  .every__first-card, .every__second-card, .every__third-card {
+    width: 300px;
+    height: 450px;
+  }
+  .every__first-card-title, .every__second-card-title, .every__third-card-title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: -6px;
+  }
+  .every__first-card-paragraph, .every__second-card-paragraph, .every__third-card-paragraph {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 21px;
@@ -1755,7 +1781,7 @@ textarea {
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.2px;
-    margin-bottom: 60px;
+    margin-bottom: 82px;
   }
   .popular__first-card-title--mod, .popular__second-card-title--mod {
     margin-bottom: 40px;
@@ -1803,6 +1829,64 @@ textarea {
   }
   .examples-button-next {
     top: 65%;
+  }
+  .every__flag {
+    flex-direction: column;
+    align-items: start;
+    margin-top: -2px;
+    margin-bottom: 10px;
+  }
+  .every__first-cardd, .every__second-cardd {
+    position: relative;
+    width: 335px;
+    height: 440px;
+    padding: 19px 24px;
+  }
+  .every__first-cardd-title, .every__second-cardd-title {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    margin-bottom: 82px;
+  }
+  .every__first-cardd-title--mod, .every__second-cardd-title--mod {
+    margin-bottom: 40px;
+  }
+  .every__flag {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 50px;
+  }
+  .every__first-card, .every__second-card, .every__third-card {
+    padding: 25px 9px;
+    width: 225px;
+    height: 400px;
+  }
+  .every__first-card-title, .every__second-card-title, .every__third-card-title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: -6px;
+  }
+  .every__first-card-paragraph, .every__second-card-paragraph, .every__third-card-paragraph {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+  .every__first-card-name, .every__second-card-name, .every__third-card-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .every__first-card-rating, .every__second-card-rating, .every__third-card-rating {
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 5px;
+  }
+  .every__first-card-data, .every__second-card-data, .every__third-card-data {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -1939,6 +2023,55 @@ textarea {
     line-height: 19px;
   }
   .update__first-card-data, .update__second-card-data, .update__third-card-data {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .every__cards {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .every__cards a {
+    width: 100%;
+  }
+  .every__first-cardd, .every__second-cardd {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .every__first-cardd-title, .every__second-cardd-title {
+    width: 54%;
+  }
+  .every__cardss {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .every__first-card, .every__second-card, .every__third-card {
+    padding: 35px 35px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .every__first-card-title, .every__second-card-title, .every__third-card-title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: -6px;
+  }
+  .every__first-card-paragraph, .every__second-card-paragraph, .every__third-card-paragraph {
+    width: 50%;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 21px;
+  }
+  .every__first-card-name, .every__second-card-name, .every__third-card-name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .every__first-card-rating, .every__second-card-rating, .every__third-card-rating {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .every__first-card-data, .every__second-card-data, .every__third-card-data {
     font-size: 16px;
     line-height: 22px;
   }
@@ -2190,16 +2323,19 @@ textarea {
     margin-top: -20px;
   }
   .examples {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     padding-top: 15px;
   }
+  .examples__flag {
+    padding-top: 0;
+  }
   .examples-button-prev {
-    top: 47%;
+    top: 42%;
     left: -2%;
     transform: scale(0.7);
   }
   .examples-button-next {
-    top: 47%;
+    top: 42%;
     right: -2%;
     transform: scale(0.7);
   }
@@ -2274,6 +2410,119 @@ textarea {
     top: 23px;
     left: 22px;
     letter-spacing: 0.2px;
+  }
+  .every {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .every__cards {
+    margin-bottom: 16px;
+  }
+  .every__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: -52px;
+    margin-right: 10px;
+    letter-spacing: 0;
+  }
+  .every__flag {
+    margin-bottom: 27px;
+  }
+  .every__text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 100%;
+    margin-right: 9px;
+  }
+  .every__text::after {
+    content: " за компанией";
+  }
+  .every__cards {
+    margin-bottom: 1px;
+  }
+  .every__first-cardd, .every__second-cardd {
+    width: 100%;
+    height: 322px;
+    margin-bottom: 14px;
+    padding: 17px 19px;
+  }
+  .every__first-cardd-title, .every__second-cardd-title {
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    width: 100%;
+  }
+  .every__first-cardd-title--mod, .every__second-cardd-title--mod {
+    margin-bottom: 0;
+  }
+  .every__first-cardd-img, .every__second-cardd-img {
+    margin-right: 6px;
+  }
+  .every__first-cardd-name, .every__second-cardd-name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px;
+  }
+  .every__first-cardd-rating, .every__second-cardd-rating {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 5px;
+  }
+  .every__first-cardd-data, .every__second-cardd-data {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .every__label {
+    max-width: 132px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 2px 11px;
+    top: 25px;
+    left: 17px;
+  }
+  .every__first-card, .every__second-card, .every__third-card {
+    height: 320px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+  .every__first-card-title, .every__second-card-title, .every__third-card-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: -2px;
+    width: 100%;
+  }
+  .every__first-card-title-mod, .every__second-card-title-mod, .every__third-card-title-mod {
+    margin-bottom: -6px;
+  }
+  .every__first-card-paragraph, .every__second-card-paragraph, .every__third-card-paragraph {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 21px;
+    width: 100%;
+  }
+  .every__first-card-paragraph-mod, .every__second-card-paragraph-mod, .every__third-card-paragraph-mod {
+    margin-bottom: 4px;
+    letter-spacing: 0;
+  }
+  .every__first-card-img, .every__second-card-img, .every__third-card-img {
+    margin-right: 6px;
+  }
+  .every__first-card-name, .every__second-card-name, .every__third-card-name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 4px;
+  }
+  .every__first-card-rating, .every__second-card-rating, .every__third-card-rating {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 5px;
+  }
+  .every__first-card-data, .every__second-card-data, .every__third-card-data {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
