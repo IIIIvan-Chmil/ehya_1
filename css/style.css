@@ -1328,6 +1328,18 @@ textarea {
   padding-bottom: 20px;
 }
 
+.every__newa {
+  display: none;
+}
+
+.every__newd {
+  display: none;
+}
+
+.every__newb1 {
+  display: none;
+}
+
 .every__title {
   color: #183B56;
   font-family: Roboto;
@@ -1362,6 +1374,7 @@ textarea {
 }
 
 .every__cards a {
+  display: block;
   text-decoration: none;
 }
 
@@ -1628,6 +1641,10 @@ textarea {
   border-radius: 8px;
   border: 2px solid #1565D8;
   margin-right: 10px;
+}
+
+.every__button-mod-new {
+  display: none;
 }
 
 .every__button-img {
@@ -2330,12 +2347,12 @@ textarea {
     padding-top: 0;
   }
   .examples-button-prev {
-    top: 42%;
+    top: 42.5%;
     left: -2%;
     transform: scale(0.7);
   }
   .examples-button-next {
-    top: 42%;
+    top: 42.5%;
     right: -2%;
     transform: scale(0.7);
   }
@@ -2415,6 +2432,21 @@ textarea {
     padding-top: 10px;
     padding-bottom: 20px;
   }
+  .every__newa {
+    display: block;
+  }
+  .every__newb {
+    display: none;
+  }
+  .every__newb1 {
+    display: block;
+  }
+  .every__newc {
+    display: none;
+  }
+  .every__newd {
+    display: block;
+  }
   .every__cards {
     margin-bottom: 16px;
   }
@@ -2483,6 +2515,9 @@ textarea {
     top: 25px;
     left: 17px;
   }
+  .every__cardss {
+    margin-bottom: 17px;
+  }
   .every__first-card, .every__second-card, .every__third-card {
     height: 320px;
     padding: 16px 20px;
@@ -2491,20 +2526,21 @@ textarea {
   .every__first-card-title, .every__second-card-title, .every__third-card-title {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: -2px;
+    margin-bottom: -8px;
     width: 100%;
   }
   .every__first-card-title-mod, .every__second-card-title-mod, .every__third-card-title-mod {
-    margin-bottom: -6px;
+    margin-bottom: -8px;
   }
   .every__first-card-paragraph, .every__second-card-paragraph, .every__third-card-paragraph {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 24px;
     margin-bottom: 21px;
     width: 100%;
   }
   .every__first-card-paragraph-mod, .every__second-card-paragraph-mod, .every__third-card-paragraph-mod {
     margin-bottom: 4px;
+    line-height: 22px;
     letter-spacing: 0;
   }
   .every__first-card-img, .every__second-card-img, .every__third-card-img {
@@ -2523,6 +2559,27 @@ textarea {
   .every__first-card-data, .every__second-card-data, .every__third-card-data {
     font-size: 14px;
     line-height: 20px;
+  }
+  .every__button-mod {
+    display: none;
+  }
+  .every__button-mod-new {
+    display: block;
+    width: 172px;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1565D8;
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 2px solid #1565D8;
+    margin-right: 4px;
+  }
+  .every__button-mod-img {
+    margin-left: 4px;
   }
 }
 /*# sourceMappingURL=style.css.map */
