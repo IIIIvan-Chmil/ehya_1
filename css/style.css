@@ -1455,7 +1455,7 @@ textarea {
     padding-top: 50px;
   }
   .update__first-card, .update__second-card, .update__third-card {
-    padding: 25px 5px;
+    padding: 25px 9px;
     width: 225px;
     height: 400px;
   }
@@ -1468,6 +1468,30 @@ textarea {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 21px;
+  }
+  .update__first-card-name, .update__second-card-name, .update__third-card-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .update__first-card-rating, .update__second-card-rating, .update__third-card-rating {
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 5px;
+  }
+  .update__first-card-data, .update__second-card-data, .update__third-card-data {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .examples__flag {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 50px;
+  }
+  .examples-button-prev {
+    top: 65%;
+  }
+  .examples-button-next {
+    top: 65%;
   }
 }
 
@@ -1594,6 +1618,18 @@ textarea {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 21px;
+  }
+  .update__first-card-name, .update__second-card-name, .update__third-card-name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .update__first-card-rating, .update__second-card-rating, .update__third-card-rating {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .update__first-card-data, .update__second-card-data, .update__third-card-data {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
@@ -1847,12 +1883,12 @@ textarea {
     padding-top: 15px;
   }
   .examples-button-prev {
-    top: 42%;
+    top: 47%;
     left: -2%;
     transform: scale(0.7);
   }
   .examples-button-next {
-    top: 42%;
+    top: 47%;
     right: -2%;
     transform: scale(0.7);
   }
