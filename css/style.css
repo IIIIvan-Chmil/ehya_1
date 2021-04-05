@@ -661,6 +661,32 @@ textarea {
   left: 30px;
 }
 
+.navigation {
+  display: flex;
+  align-items: flex-start;
+}
+
+.navigation ul li {
+  display: block;
+  position: relative;
+}
+
+.navigation ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  list-style-type: none;
+  padding-left: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+.dropdown li {
+  margin-bottom: 10px;
+}
+
 .popular {
   padding-top: 50px;
   padding-bottom: 20px;
