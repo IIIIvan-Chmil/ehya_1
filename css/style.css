@@ -1661,7 +1661,6 @@ textarea {
 
 .footer {
   padding-top: 201px;
-  padding-bottom: 10px;
 }
 
 .footer__container {
@@ -1876,25 +1875,20 @@ textarea {
   color: #5A7184;
 }
 
-.footer__end-item {
-  min-width: 165px;
-  max-width: 243px;
-}
-
 .footer__end-item-first {
   margin-right: 49px;
 }
 
 .footer__end-item-second {
-  margin-right: 31px;
+  margin-right: 83px;
 }
 
 .footer__end-item-third {
-  margin-right: 30px;
+  margin-right: 82px;
 }
 
 .footer__end-item-fourth {
-  margin-right: -48px;
+  margin-right: 22px;
 }
 
 .footer__logo {
@@ -1962,6 +1956,18 @@ textarea {
   button:hover {
     color: #36B37E;
     transition: 0.2s;
+  }
+}
+
+@media (max-width: 1320px) {
+  .footer__info {
+    right: 50px;
+  }
+  .footer__restangle-gray {
+    right: 341px;
+  }
+  .footer__restangle-blue {
+    right: -1px;
   }
 }
 
@@ -2041,6 +2047,40 @@ textarea {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 21px;
+  }
+  .footer__container {
+    max-width: 960px;
+  }
+  .footer__container-two {
+    max-width: 960px;
+  }
+  .footer__info {
+    display: none;
+  }
+  .footer__restangle-gray {
+    display: none;
+  }
+  .footer__restangle-blue {
+    display: none;
+  }
+  .footer__average {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__block {
+    padding-top: 5px;
+  }
+  .footer__line {
+    height: 80px;
+  }
+  .footer__end-item-first {
+    margin-right: 25px;
+  }
+  .footer__end-item-second {
+    margin-right: 20px;
+  }
+  .footer__end-item-third {
+    margin-right: 35px;
   }
 }
 
@@ -2206,6 +2246,46 @@ textarea {
   .every__first-card-data, .every__second-card-data, .every__third-card-data {
     font-size: 12px;
     line-height: 18px;
+  }
+  .footer__container {
+    max-width: 700px;
+  }
+  .footer__container-two {
+    max-width: 750px;
+  }
+  .footer__after-line {
+    height: 90px;
+  }
+  .footer__end {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__end-text {
+    text-align: center;
+  }
+  .footer__end-item-first {
+    margin-top: 50px;
+    margin-right: 0px;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer__end-item-second {
+    margin-right: 30px;
+  }
+  .footer__end-item-third {
+    margin-right: 30px;
+  }
+  .footer__end-item-fourth {
+    margin-right: 30px;
+  }
+  .footer__copyright {
+    height: 215px;
+  }
+  .footer__copyright-centr {
+    margin-right: 0;
   }
 }
 
@@ -2394,9 +2474,31 @@ textarea {
     font-size: 16px;
     line-height: 22px;
   }
+  .footer__container {
+    max-width: 90%;
+  }
+  .footer__container-two {
+    max-width: 90%;
+  }
+  .footer__end {
+    justify-content: space-between;
+  }
+  .footer__end-item-second {
+    margin-right: 38px;
+  }
+  .footer__end-item-third {
+    margin-right: 38px;
+  }
+  .footer__end-item-fourth {
+    margin-right: 38px;
+  }
+  .footer__end-item-fifth {
+    margin-top: 50px;
+    margin-right: 70px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 585px) {
   .container {
     width: 90%;
   }
@@ -2882,6 +2984,165 @@ textarea {
   }
   .every__button-mod-img {
     margin-left: 4px;
+  }
+  .footer {
+    padding-top: 88px;
+  }
+  .footer__container-two {
+    max-width: 85%;
+  }
+  .footer__average {
+    margin-bottom: 71px;
+  }
+  .footer__block {
+    max-width: 95%;
+    padding-top: 44px;
+  }
+  .footer__block-title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+    width: 70%;
+  }
+  .footer__block-title-th {
+    display: none;
+  }
+  .footer__block-title::before {
+    content: "Получайте";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+  .footer__block-form {
+    max-width: 100%;
+    margin-bottom: -14px;
+    height: 109px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer__block-input {
+    width: 100%;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 12px;
+  }
+  .footer__block-button {
+    width: 100%;
+    height: 48px;
+    background: #1565D8;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .footer__block-text {
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .footer__line {
+    display: none;
+  }
+  .footer__after-line {
+    display: none;
+  }
+  .footer__end-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .footer__end-title-th {
+    font-size: 0;
+    margin-bottom: 15px;
+  }
+  .footer__end-title-th::after {
+    content: "Еще..";
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A7184;
+  }
+  .footer__end-text {
+    max-width: 80%;
+    margin-top: -9px;
+    margin-bottom: 22px;
+    margin-left: -10px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .footer__end-item {
+    width: 140px;
+    margin-bottom: 39px;
+  }
+  .footer__end-item-first {
+    margin-top: 13px;
+    width: 100%;
+  }
+  .footer__end-item-second {
+    margin-right: 30px;
+  }
+  .footer__end-item-third {
+    margin-right: 30px;
+  }
+  .footer__end-item-fourth {
+    margin-right: 30px;
+  }
+  .footer__end-item-fifth {
+    margin-top: 0;
+    margin-right: 30px;
+  }
+  .footer__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .footer__item-th {
+    margin-top: -5px;
+  }
+  .footer__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer__link-thr::after {
+    content: "Privacy Policy";
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #959EAD;
+  }
+  .footer__fourth-link-fill {
+    display: none;
+  }
+  .footer__logo {
+    width: 77px;
+    height: 24px;
+  }
+  .footer__copyright {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__container-two {
+    max-width: 88%;
+  }
+  .footer__end-item-second {
+    margin-right: 0px;
+  }
+  .footer__end-item-third {
+    margin-right: 0px;
+  }
+  .footer__end-item-fourth {
+    margin-right: 0px;
+  }
+  .footer__end-item-fifth {
+    margin-top: 0;
+    margin-right: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
