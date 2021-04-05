@@ -310,9 +310,37 @@
       height: 100%
   .header
     padding-bottom: 350px
+    &__item
+      margin-bottom: 25px
+    &__nav
+      padding-bottom: 23px
+      z-index: 9999999
+      &-fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        background-color: #183B56
+    &__logo
+      margin-left: 40px
     &__fragment
       display: none
+      &--visible
+        position: fixed
+        width: 100%
+        left: 0
+        right: 0
+        top: 83px
+        // bottom: 0
+        background-color: #183B56
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding-left: 35vw
+    &__forbutton
+      padding-bottom: 90px
     &__menu
+      display: block
       &-button
         display: flex
         width: 22px
@@ -322,11 +350,15 @@
         flex-direction: column
         border: none
         background-color: transparent
+        margin-right: 40px
         &-line
           width: 22px
           height: 2px
           background-color: #ffffff
     &__block
+      margin-top: 0
+      &-title
+        margin-top: 110px
       &-form
         width: 100%
       &-tags
@@ -335,6 +367,12 @@
       &-list
         flex-basis: 100%
         margin-bottom: 20px
+  .navigation
+  .dropdown
+    left: 120%
+    top: 0
+    li
+      width: 100px
   .header,
   .examples
     &__featured
@@ -472,24 +510,29 @@
   .container
     width: 90%
   .header
-    padding-bottom: 352px
+    padding-bottom: 316px
     &__background
       height: 518px
     &__nav
       padding-top: 13px
     &__logo
       max-width: 79px
-      margin-left: 7px
+      margin-left: 23px
     &__menu
       &-button
-        margin-top: 6px
-        margin-right: 8px
+        margin-top: 4px
+        margin-right: 25px
+    &__fragment
+      &--visible
+        top: 69px
+        padding-left: 15vw
     &__block
       margin-top: 36px
       &-title
         font-size: 32px
         line-height: 40px
         margin-bottom: 30px
+        margin-top: 68px
       &-form
         height: 100%
         width: 95%

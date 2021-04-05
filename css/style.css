@@ -2329,8 +2329,43 @@ textarea {
   .header {
     padding-bottom: 350px;
   }
+  .header__item {
+    margin-bottom: 25px;
+  }
+  .header__nav {
+    padding-bottom: 23px;
+    z-index: 9999999;
+  }
+  .header__nav-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #183B56;
+  }
+  .header__logo {
+    margin-left: 40px;
+  }
   .header__fragment {
     display: none;
+  }
+  .header__fragment--visible {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 83px;
+    background-color: #183B56;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 35vw;
+  }
+  .header__forbutton {
+    padding-bottom: 90px;
+  }
+  .header__menu {
+    display: block;
   }
   .header__menu-button {
     display: flex;
@@ -2341,11 +2376,18 @@ textarea {
     flex-direction: column;
     border: none;
     background-color: transparent;
+    margin-right: 40px;
   }
   .header__menu-button-line {
     width: 22px;
     height: 2px;
     background-color: #ffffff;
+  }
+  .header__block {
+    margin-top: 0;
+  }
+  .header__block-title {
+    margin-top: 110px;
   }
   .header__block-form {
     width: 100%;
@@ -2357,6 +2399,13 @@ textarea {
   .header__block-list {
     flex-basis: 100%;
     margin-bottom: 20px;
+  }
+  .dropdown {
+    left: 120%;
+    top: 0;
+  }
+  .dropdown li {
+    width: 100px;
   }
   .header__featured,
   .examples__featured {
@@ -2529,7 +2578,7 @@ textarea {
     width: 90%;
   }
   .header {
-    padding-bottom: 352px;
+    padding-bottom: 316px;
   }
   .header__background {
     height: 518px;
@@ -2539,11 +2588,15 @@ textarea {
   }
   .header__logo {
     max-width: 79px;
-    margin-left: 7px;
+    margin-left: 23px;
   }
   .header__menu-button {
-    margin-top: 6px;
-    margin-right: 8px;
+    margin-top: 4px;
+    margin-right: 25px;
+  }
+  .header__fragment--visible {
+    top: 69px;
+    padding-left: 15vw;
   }
   .header__block {
     margin-top: 36px;
@@ -2552,6 +2605,7 @@ textarea {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 30px;
+    margin-top: 68px;
   }
   .header__block-form {
     height: 100%;
