@@ -380,7 +380,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 23px;
+  padding-top: 3px;
 }
 
 .header__logo {
@@ -409,6 +409,8 @@ textarea {
 
 .header__item {
   margin-right: 26px;
+  padding-top: 20px;
+  padding-bottom: 20PX;
 }
 
 .header__item a {
@@ -439,7 +441,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 110px;
+  margin-top: 90px;
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
@@ -1705,6 +1707,7 @@ textarea {
 
 .footer__upward {
   max-height: 175px;
+  width: 100%;
   position: relative;
 }
 
@@ -1971,6 +1974,93 @@ textarea {
   line-height: 22px;
   text-align: center;
   color: #5A7184;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 41%;
+  left: 50%;
+  width: 478px;
+  padding: 39px 87px 31px 89px;
+  background-color: #0D2436;
+  transform: translate(-50%, -40%);
+  color: #FFFFFF;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.modal__input {
+  width: 100%;
+}
+
+.modal__input-group {
+  margin-bottom: 15px;
+  flex-basis: 47%;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__button-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 992px) {
@@ -2331,26 +2421,28 @@ textarea {
   }
   .header__item {
     margin-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .header__nav {
     padding-bottom: 23px;
     z-index: 9999999;
   }
   .header__nav-fixed {
-    position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    background-color: #183B56;
   }
   .header__logo {
     margin-left: 40px;
+    padding-top: 20px;
   }
   .header__fragment {
     display: none;
   }
   .header__fragment--visible {
     position: fixed;
+    z-index: 10000;
     width: 100%;
     left: 0;
     right: 0;
@@ -2578,7 +2670,7 @@ textarea {
     width: 90%;
   }
   .header {
-    padding-bottom: 316px;
+    padding-bottom: 351px;
   }
   .header__background {
     height: 518px;
@@ -2588,18 +2680,19 @@ textarea {
   }
   .header__logo {
     max-width: 79px;
-    margin-left: 23px;
+    margin-left: 8px;
+    margin-top: -14px;
   }
   .header__menu-button {
     margin-top: 4px;
-    margin-right: 25px;
+    margin-right: 9px;
   }
   .header__fragment--visible {
     top: 69px;
     padding-left: 15vw;
   }
   .header__block {
-    margin-top: 36px;
+    margin-top: -35px;
   }
   .header__block-title {
     font-size: 32px;
@@ -3148,7 +3241,6 @@ textarea {
     color: #5A7184;
   }
   .footer__end-text {
-    max-width: 80%;
     margin-top: -9px;
     margin-bottom: 22px;
     margin-left: -10px;
