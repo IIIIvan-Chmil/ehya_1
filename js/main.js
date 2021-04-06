@@ -27,6 +27,7 @@ function openModal() {
   modalOverlay.addClass('modal__overlay--visible');
   modalDialog.addClass('modal__dialog--visible');
 }
+
 function closeModal(event) {
   event.preventDefault();
   var modalOverlay = $(".modal__overlay");
@@ -34,5 +35,11 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 }
+
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape') {
+      closeModal(event);
+    };
+  });
 
 });
