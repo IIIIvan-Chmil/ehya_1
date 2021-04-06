@@ -510,6 +510,11 @@
         &-fifth
           margin-top: 50px
           margin-right: 70px
+@media (max-height: 500px)
+  .modal
+    &__father
+      overflow: auto
+      height: 65vh
 @media (max-width: 585px)
   .container
     width: 90%
@@ -1027,6 +1032,17 @@
       height: 24px
     &__copyright
       display: none
+  .modal
+    &__dialog
+      width: 92%
+      top: 50%
+      transform: translate(-50%, -50%)
+      padding: 39px 20px 31px 20px
+    &__button
+      &-info
+        flex-direction: column-reverse
+    &__info
+      margin-bottom: 15px
 @media (max-width: 400px)
   .footer
     &__container
