@@ -14,6 +14,9 @@ menuButton.addEventListener('click', function () {
   document
   .querySelector(".header__fragment")
   .classList.toggle('header__fragment--visible');
+  document
+  .querySelector(".header__nav-fixed")
+  .classList.toggle('header__nav-fixed--visible');
 });
 
 var modalButton = $('[data-toggle=modal]');

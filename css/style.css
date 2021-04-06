@@ -2481,6 +2481,9 @@ textarea {
     top: 0;
     right: 0;
   }
+  .header__nav-fixed--visible {
+    background-color: #183B56;
+  }
   .header__logo {
     margin-left: 40px;
     padding-top: 20px;
@@ -2491,9 +2494,7 @@ textarea {
   .header__fragment--visible {
     position: fixed;
     z-index: 10000;
-    width: 100%;
-    left: 0;
-    right: 0;
+    width: 90%;
     top: 83px;
     background-color: #183B56;
     display: flex;
@@ -3301,6 +3302,7 @@ textarea {
     color: #5A7184;
   }
   .footer__end-text {
+    max-width: 290px;
     margin-top: -9px;
     margin-bottom: 22px;
     margin-left: -10px;

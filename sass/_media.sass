@@ -322,7 +322,8 @@
         left: 0
         top: 0
         right: 0
-        // background-color: #183B56
+        &--visible
+          background-color: #183B56
     &__logo
       margin-left: 40px
       padding-top: 20px
@@ -331,9 +332,9 @@
       &--visible
         position: fixed
         z-index: 10000
-        width: 100%
-        left: 0
-        right: 0
+        width: 90%
+        // left: 0
+        // right: 0
         top: 83px
         // bottom: 0
         background-color: #183B56
@@ -990,6 +991,7 @@
           line-height: 22px
           color: #5A7184
       &-text
+        max-width: 290px
         margin-top: -9px
         margin-bottom: 22px
         margin-left: -10px
