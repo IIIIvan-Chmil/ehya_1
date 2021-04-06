@@ -1904,6 +1904,10 @@ textarea {
   color: #5A7184;
 }
 
+.footer__end-text-br {
+  display: none;
+}
+
 .footer__end-item-first {
   margin-right: 49px;
 }
@@ -3210,17 +3214,22 @@ textarea {
     margin-left: 4px;
   }
   .footer {
-    padding-top: 88px;
+    padding-top: 156px;
   }
   .footer__container-two {
     max-width: 85%;
   }
   .footer__average {
     margin-bottom: 71px;
+    margin-top: -24px;
+  }
+  .footer__upward-img {
+    height: 175px;
+    object-fit: cover;
   }
   .footer__block {
     max-width: 95%;
-    padding-top: 44px;
+    padding-top: 0;
   }
   .footer__block-title {
     font-size: 24px;
@@ -3297,6 +3306,9 @@ textarea {
     margin-left: -10px;
     font-size: 14px;
     line-height: 28px;
+  }
+  .footer__end-text-br {
+    display: inline-block;
   }
   .footer__end-item {
     width: 140px;
