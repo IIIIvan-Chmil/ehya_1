@@ -45,4 +45,31 @@ document.addEventListener('keydown', (event) => {
     };
   });
 
+  // Обработка форм
+$('.form').each(function () {
+      $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Укажите Ваше имя",
+          minlength: "В имени не менее 2 букв",
+        },
+        email: {
+          required: "Ваш email для связи",
+          email: "Образец: name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен",
+          minlength: "Пожалуйста +7(###) ###-##-##",
+        },
+      },
+    });
+  });
+
+  // Маска телефона
+    $(document).ready(function() {
+    $('.phone').mask('+7(000) 000-00-00');
+  });
+  AOS.init();
+
 });
