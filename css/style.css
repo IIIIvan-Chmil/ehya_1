@@ -367,6 +367,10 @@ textarea {
   padding-bottom: 209px;
 }
 
+.header__thank {
+  padding-bottom: 20px;
+}
+
 .header__background {
   height: 745px;
   background: #1565d8;
