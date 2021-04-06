@@ -451,6 +451,22 @@ textarea {
   margin-right: auto;
 }
 
+.header__block-exit {
+  display: block;
+  width: 200px;
+  background-color: #1565d8;
+  padding: 20px 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .header__block-title {
   color: #ffffff;
   font-family: Roboto;
@@ -1695,6 +1711,10 @@ textarea {
   padding-top: 201px;
 }
 
+.footer__thank {
+  padding-top: 33px;
+}
+
 .footer__container {
   max-width: 1140px;
   margin: auto;
@@ -2265,6 +2285,9 @@ textarea {
   .header {
     padding-bottom: 170px;
   }
+  .header__thank {
+    padding-bottom: 20px;
+  }
   .header__fragment {
     justify-content: flex-end;
   }
@@ -2470,6 +2493,9 @@ textarea {
   }
   .header {
     padding-bottom: 350px;
+  }
+  .header__thank {
+    padding-bottom: 20px;
   }
   .header__item {
     margin-bottom: 25px;
@@ -2732,6 +2758,9 @@ textarea {
   .header {
     padding-bottom: 351px;
   }
+  .header__thank {
+    padding-bottom: 0;
+  }
   .header__background {
     height: 518px;
   }
@@ -2759,6 +2788,9 @@ textarea {
     line-height: 40px;
     margin-bottom: 30px;
     margin-top: 68px;
+  }
+  .header__block-title-thank {
+    font-size: 28px;
   }
   .header__block-form {
     height: 100%;
@@ -3220,6 +3252,9 @@ textarea {
   }
   .footer {
     padding-top: 156px;
+  }
+  .footer__thank {
+    padding-top: 30px;
   }
   .footer__container-two {
     max-width: 85%;
