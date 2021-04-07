@@ -388,6 +388,10 @@ label.invalid {
   padding-bottom: 209px;
 }
 
+.header-neww {
+  padding-bottom: 10px;
+}
+
 .header__thank {
   padding-bottom: 20px;
 }
@@ -401,6 +405,11 @@ label.invalid {
   background-size: contain, cover;
 }
 
+.header__background-neww {
+  height: 645px;
+  background-image: url(../img/wave.png), url(../img/two/men.png);
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -408,9 +417,17 @@ label.invalid {
   padding-top: 3px;
 }
 
+.header__nav-neww {
+  margin-right: 11px;
+}
+
 .header__logo {
   max-width: 90px;
   margin-top: 5px;
+}
+
+.header__logo-neww {
+  margin-left: -11px;
 }
 
 .header__menu {
@@ -497,6 +514,16 @@ label.invalid {
   line-height: 60px;
   letter-spacing: 0.2px;
   margin-bottom: 41px;
+}
+
+.header__block-title-neww {
+  margin-top: 26px;
+  margin-bottom: 12px;
+  margin-left: 69px;
+}
+
+.header__block-title-two {
+  margin-left: 57px;
 }
 
 .header__block-form {
@@ -2336,23 +2363,41 @@ label.invalid {
   .header__fragment {
     justify-content: flex-end;
   }
-  __block {
+  .header__block,
+  .examples__block {
     max-width: 600px;
     margin-top: 46px;
   }
-  __block-title-form {
+  .header__block-neww,
+  .examples__block-neww {
+    max-width: 100%;
+    margin-top: 90px;
+  }
+  .header__block-title-neww,
+  .examples__block-title-neww {
+    margin-left: 0;
+  }
+  .header__block-title-two,
+  .examples__block-title-two {
+    margin-left: 0;
+  }
+  .header__block-title-form,
+  .examples__block-title-form {
     width: 600px;
   }
-  __block__featured-card {
+  .header__featured-card,
+  .examples__featured-card {
     padding: 10px 46px 22px 32px;
   }
-  __block__featured-card-title {
+  .header__featured-card-title,
+  .examples__featured-card-title {
     font-size: 26px;
     line-height: 31px;
     margin-top: 45px;
     margin-bottom: 7px;
   }
-  __block__featured-card-paragraph {
+  .header__featured-card-paragraph,
+  .examples__featured-card-paragraph {
     font-size: 16px;
     line-height: 25px;
   }
@@ -2551,6 +2596,9 @@ label.invalid {
     padding-bottom: 23px;
     z-index: 9999999;
   }
+  .header__nav-neww {
+    margin-right: 0px;
+  }
   .header__nav-fixed {
     left: 0;
     top: 0;
@@ -2605,6 +2653,15 @@ label.invalid {
   }
   .header__block-title {
     margin-top: 110px;
+  }
+  .header__block-title-neww {
+    font-size: 44px;
+    text-align: center;
+  }
+  .header__block-title-two {
+    font-size: 44px;
+    margin-top: 17px;
+    text-align: center;
   }
   .header__block-form {
     width: 100%;
@@ -2835,6 +2892,17 @@ label.invalid {
     line-height: 40px;
     margin-bottom: 30px;
     margin-top: 68px;
+  }
+  .header__block-title-neww {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 88px;
+    margin-bottom: 0px;
+  }
+  .header__block-title-two {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 0;
   }
   .header__block-title-thank {
     font-size: 28px;
